@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Burgerella</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="x-image" href="img/fav.svg" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<script src="https://kit.fontawesome.com/73e9f69048.js" crossorigin="anonymous"></script>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</head>
+<body>
+<div class="membership"> <a href="#">Membership <i class="fas fa-user"></a></i></div>
+			<!--- header section --->
+<section id="header">
+	<div class="container">
+		<div class="topnav" id="myTopnav">
+			<a href="#" class="active logo"><img src="img/logo.svg" alt="Logo" width="100" /></a>
+			<a href="#">HOME</a>
+			<a href="#">PRODUCT</a>
+			<a href="#">SHOP</a>
+			<div class="dropdown">
+				<div class="dropbtn"> NEW </div>
+				<div class="dropdown-content">
+					<a href="#">Burger</a>
+					<a href="#">Drink</a>
+					<a href="#">Combo</a>
+				</div>
+			</div>
+			<a class="input-container" title="Search Product">
+				<i class="fas fa-magnifying-glass"></i>
+				<input class="input-field" type="text" placeholder="search product" name="search">
+			</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+		<marquee style="color: tomato; background: #ffffff; font-size: 25px; -webkit-text-stroke: 0.2px black;">WECOME TO BURGERELLA</marquee>
+	</div>
+</section>
+			<!--- end header section --->
+			<!--- hero section --->
+<section id="hero">
+	<div class="container">
+		<div class="flex-container">
+			<div class="flex-item"><h1>COMBO BURGER	<br /> WITH SPECIAL PRICE</h1></div>
+			<div class="flex-item"><p>Buy any 2 large burgers and get a 1.5L Pepsi Free</p></div>
+			<div class="flex-item"><a href="#">ORDER NOW</a></div>
+		</div>
+	</div>
+</section>
+			<!--- end hero section --->
+			<!--- foodmenu section --->
+<section id="foodmenu" class="container">
+	<h2 class="title">Food Menu</h2>	<br />	<br />
+	<div class="flex-container">
+		<div class="flex-item"><a href="#"><img src="img/menu-1.jpg" alt="Menu" /></a>	<br /><div class="caption">Burgers</div></div>
+		<div class="flex-item"><a href="#"><img src="img/menu-2.jpg" alt="Menu" /></a>	<br /><div class="caption">Cold Drinks</div></div>
+		<div class="flex-item"><a href="#"><img src="img/menu-3.jpg" alt="Menu" /></a>	<br /><div class="caption">Combo</div></div>
+	</div>
+</section>
+			<!--- end foodmenu section --->
+			<!--- banner section --->
+<section id="banner">
+	<div class="container">
+		<div class="flex-container">
+			<div class="flex-item banner1">
+				<div class="banner-content">
+					<h1>MINI BURGER</h1>
+					<p>Everything you order will be	<br /> quickly delivered to your door.</p>
+					<h2>$10.00</h2>
+				</div>
+			</div>
+			<div class="flex-item banner2">
+				<div class="banner-content">
+					<h1>BIG BURGER PREMIUM</h1>
+					<p>Everything you order will be	<br /> quickly delivered to your door.</p>
+					<h2>$15.00</h2>
+				</div>
+			</div>
+			<div class="flex-item banner3">
+				<div class="banner-content">
+					<h1>COMBO PACKS</h1>
+					<p>Everything you order will be	<br /> quickly delivered to your door.</p>
+					<h2>$30.00</h2>
+				</div>
+			</div>
+			<div class="flex-item banner4">
+				<div class="banner-content">
+					<h1>COLD DRINKS OFFER</h1>
+					<p>Buy any 2 large burgers <br /> and get a 1.5L Coca-Cola Free</p>
+					<a href="#">FREE SHIPPING</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<!--- end banner section --->
+			<!--- product section --->
+<section id="products">
+	<div class="container">	<br />	<br />
+		<h2 class="title">Favourite Items</h2>	<br />	<br />
+		<div class="flex-container">
+			<div class="flex-item">
+				<div class="card">
+					<img src="img/product-1.jpg" alt="Product" />
+					<div class="caption">$15.00</div>
+					<h2>SPECIAL BURGER</h2>	<br />
+					<span>Add to Cart <i class="fas fa-cart-shopping"></i></span>
+				</div>
+			</div>
+			<div class="flex-item">
+				<div class="card">
+					<div class="discount">20%</div>
+					<img src="img/product-2.jpg" alt="Product" />
+					<div class="caption"><del>$25.00</del> $20.00</div>
+					<h2>GIANT BURGER</h2>	<br />
+					<span>Add to Cart <i class="fas fa-cart-shopping"></i></span>
+				</div>
+			</div>
+			<div class="flex-item">
+				<div class="card">
+					<img src="img/product-3.jpg" alt="Product" />
+					<div class="caption">$5.00</div>
+					<h2>ORANGE JUICE</h2>	<br />
+					<span>Add to Cart <i class="fas fa-cart-shopping"></i></span>
+				</div>
+			</div>
+			<div class="flex-item">
+				<div class="card">
+					<img src="img/product-4.jpg" alt="Product" />
+					<div class="caption">$10.00</div>
+					<h2>MINI BURGER</h2>	<br />
+					<span>Add to Cart <i class="fas fa-cart-shopping"></i></span>
+				</div>
+			</div>
+			<div class="flex-item">
+				<div class="card">
+					<div class="discount">20%</div>
+					<img src="img/product-5.jpg" alt="Product" />
+					<div class="caption"><del>$10.00</del> $8.00</div>
+					<h2>COCA-COLA</h2>	<br />
+					<span>Add to Cart <i class="fas fa-cart-shopping"></i></span>
+				</div>
+			</div>
+			<div class="flex-item">
+				<div class="card">
+					<img src="img/product-6.jpg" alt="Product" />
+					<div class="caption">$7.00</div>
+					<h2>LEMON JUICE</h2>	<br />
+					<span>Add to Cart <i class="fas fa-cart-shopping"></i></span>
+				</div>
+			</div>
+			<div class="flex-item">
+				<div class="card">
+					<div class="discount">17%</div>
+					<img src="img/product-7.jpg" alt="Product" />
+					<div class="caption"><del>$30.00</del> $25.00</div>	
+					<h2>PREMIUM PACK</h2>	<br />
+					<span>Add to Cart <i class="fas fa-cart-shopping"></i></span>
+				</div>
+			</div>
+			<div class="flex-item">
+				<div class="card">
+					<div class="discount">28%</div>
+					<img src="img/product-8.jpg" alt="Product" />
+					<div class="caption"><del>$55.00</del> $40.00</div>	
+					<h2>COMBO PACK</h2>	<br />
+					<span>Add to Cart <i class="fas fa-cart-shopping"></i></span>
+				</div>
+			</div>
+		</div>	<br />
+		<a href="#">SEE ALL PRODUCTS <i class="fa-solid fa-angle-right"></i></a>
+	</div>
+</section>	<br />	<br />
+			<!--- end product section --->
+			<!--- news section --->
+<section id="news">
+	<div class="container">
+		<h2 class="title">Latest News</h2>
+			<p>Nothing brings people together like a good burger</p>	<br />	<br />
+		<div class="flex-container">
+			<div class="flex-item">
+				<img src="img/news-1.png" alt="News" width="100%"/>
+				<span>03 April, 2022</span>	<br />	<br />
+				<h2>Lorem Ipsum</h2>
+				<p>Nunc aliquet, justo non commodo congue, velit sem pulvinar enim, ac bibendum mi mi eget libero. Maecenas...</p>	<br />
+				<a href="#">READ MORE</a>	<br />	<br />
+			</div>
+			<div class="flex-item">
+				<img src="img/news-2.png" alt="News" width="100%"/>
+				<span>28 March, 2022</span>	<br />	<br />
+				<h2>Lorem Ipsum</h2>
+				<p>Nunc aliquet, justo non commodo congue, velit sem pulvinar enim, ac bibendum mi mi eget libero. Maecenas...</p>	<br />
+				<a href="#">READ MORE</a>	<br />	<br />
+			</div>
+			<div class="flex-item">
+				<img src="img/news-3.png" alt="News" width="100%"/>
+				<span>22 March, 2022</span>	<br />	<br />
+				<h2>Lorem Ipsum</h2>
+				<p>Nunc aliquet, justo non commodo congue, velit sem pulvinar enim, ac bibendum mi mi eget libero. Maecenas...</p>	<br />
+				<a href="#">READ MORE</a>	<br />	<br />
+			</div>
+		</div>
+	</div>
+</section>
+			<!--- end news section --->
+			<!--- delivey section --->
+<section id="delivery">
+	<div class="container">
+		<div class="flex-container">
+			<div class="flex-item"><h1>YOU ORDER	<br /> WE DELIVER</h1></div>
+			<div class="flex-item"><p>Free shipping Orders $50 Get a 1.5L Pepsi Free</p></div>
+			<div class="flex-item"><a href="#">MAKE AN ORDER</a></div>
+		</div>
+	</div>
+</section>
+			<!--- end delivey section --->
+			<!--- subscribe section --->
+<section id="subscribe">
+	<div class="container">
+		<div class="flex-container">
+			<div class="flex-item"> 
+				<h3>WE ACCEPT</h3>	<br />
+				<img src="img/credit.png" alt="Credit" width="300px" />
+			</div>
+			<div class="flex-item"> 
+				<div class="social">
+					<h3>FOLLOW ON</h3>	<br />
+					<a href="https://facebook.com" title="Facebook"><i class="fa-brands fa-facebook-square"></i></a>
+					<a href="https://twitter.com" title="Twitter"><i class="fa-brands fa-twitter-square"></i></a>
+					<a href="https://linkedin.com" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+			</div>
+			<div class="flex-item">
+				<h3>NEWSLETTER</h3>
+				<p>Newsletter Exclusive Discount codes</p>	<br />
+				<div class="input-container">
+					<input class="input-field" type="email" placeholder="your email" name="email">
+					<a href="#" mailto="sample@example.com"><i class="fas fa-envelope"> <span class="tooltip">SEND</span> </i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>	<br />
+			<!--- end subscribe section --->
+			<!--- footer section --->
+<section id="footer" style="color: #ddd; background: #000000d1; padding: 20px 10px 0px 10px;">
+	<div class="container">
+		<div class="flex-container">
+			<div class="flex-item">
+				<h3>BOOK A TABLE</h3>
+				<p>Save time with proper planning</p>
+				<div style="font-size: 30px; color: dodgerblue;">934 595 876</div>
+			</div>
+			<div class="flex-item">
+				<h3 >FIND US</h3>
+				<p><i class="fas fa-location-dot"></i> <br /> 467 Park Avenue, New York</p>
+				<p><i class="fas fa-envelope"></i> <br /> office@example.com</p>
+				<p><i class="fas fa-phone"></i> <br /> 01-800-81200</p>
+			</div>
+			<div class="flex-item">
+				<h3 >USEFUL LINKS</h3>
+				<a href="#">Wishlist</a>	<br />
+				<a href="#">Terms of Service</a>	<br />
+				<a href="#">Privacy Policy</a>	<br />
+				<a href="#">Order Tracking</a>	<br />
+			</div>
+			<div class="flex-item" style="text-align: center; display: grid; place-items: center;"> <a href="#"><img src="img/logo.svg" alt="Logo" width="150" /></a> </div>
+		</div>
+		<div class="copyright"> &copy; 2022. Burgerella </div>
+	</div>
+</section>
+			<!--- end footer section --->
+</body>	
+</html>
+

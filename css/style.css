@@ -1,0 +1,528 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* end google fonts */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Quicksand', sans-serif;
+	background: linear-gradient(#ffffffe6, #ffffffe6), url(../img/mainbg.jpg) fixed;
+	background-size: cover;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+}
+::selection {
+  color: white;
+  background: orange;
+}
+a {
+	text-decoration: none;
+	color: tomato;
+	transition: .3s;
+}
+	a:hover {
+		color: orange;
+	}
+.container {
+	max-width: 1170px;
+	height: auto;
+	margin: auto;
+	position: relative;
+}
+.title {
+	color: white;
+	background: tomato;
+	padding: 0px 30px;
+	margin-bottom: 20px;
+	display: inline;
+	clip-path: polygon(11% 0,100% 0,89% 100%,0 100%);
+}
+.membership a {
+	position: fixed;
+    background: tomato;
+    bottom: 100px;
+    right: -55px;
+    padding: 3px 15px;
+	transform: rotate(-90deg);
+    z-index: 1;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+					/*** topnav ***/
+#header {
+	background: #ffffff;
+	opacity: 0.95;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	border-bottom: 3px solid orange;
+	z-index: 1;
+}
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+.topnav .icon {
+  display: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  color: orange;
+  padding: 14px 16px;
+  margin: 0;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: tomato;
+  min-width: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+	.dropdown:hover .dropbtn {
+	  color: tomato;
+	}
+	.dropdown-content a:hover {
+	  background-color: #ffffff;
+	  color: orange;
+	}
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+.topnav .input-container {
+	display: flex;
+}
+.topnav .input-container i {
+	padding: 10px;
+	background: orange;
+	color: white;
+	min-width: 50px;
+	text-align: center;
+	border-radius: 5px 0px 0px 5px;
+}
+.topnav .input-field {
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	text-align: center;
+	background: orange;
+	color: white;
+	font-family: inherit;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 0px 5px 5px 0px;
+	letter-spacing: 2px;
+}
+	.topnav .input-field:focus {
+		border: 2px solid orange;
+		background: darkorange;
+	}
+					/*** end topnav ***/
+					/*** hero ***/
+#hero {
+	padding: 100px 0px;
+	text-align: center;
+}
+#hero .flex-container {
+	background: url("../img/herobg.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	max-width: 100%;
+	height: auto;
+	padding: 100px 0px;
+	display: grid;
+	place-items: center;
+}
+#hero .flex-container h1 {
+	font-size: 400%;
+	color: orange;
+	font-family: Montserrat,sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	transform: rotate(-5deg);
+	margin-top: 50px;
+}
+#hero .flex-container p {
+	background: #ffc65e;
+	transform: rotate(-4deg);
+	padding: 5px 60px;
+	margin-bottom: 50px;
+	clip-path: polygon(11% 0,100% 0,89% 100%,0 100%);
+}
+#hero .flex-container a {
+	border: 1px solid tomato;
+    border-radius: 50px;
+    padding: 5px 30px;
+}
+	#hero .flex-container a:hover {
+		background: tomato;
+		color: white;
+	}
+					/*** end hero ***/
+					/*** foodmenu ***/
+#foodmenu .flex-item a img{
+	border-radius: 100%;
+	width: 200px;
+	transition: all .5s ease-in-out;
+	box-shadow: 0px 0px 5px #ddd;
+}
+	#foodmenu .flex-item a:hover > img, .caption {
+		transform: scale(1.1);
+	}
+#foodmenu .flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+}
+#foodmenu .flex-item {
+  padding: 10px;
+  flex: 33.33%;
+}
+#foodmenu .caption {
+	color: tomato;
+	margin-top: -30px;
+	margin-bottom: 50px;
+}
+					/*** end foodmenu ***/
+					/*** banner ***/
+#banner .flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: left;
+  padding: 10px;
+}
+#banner .flex-item {
+  padding: 10px;
+  flex: 50%;
+  height: auto;
+  box-shadow: 0px 0px 20px 0px gray;
+}
+	#banner .flex-item:hover {
+		transform: scale(1.01);
+		box-shadow: none;
+	}
+#banner .banner-content {
+	color: white;
+    padding: 100px 0;
+    line-height: 2;
+}
+	#banner .banner1 {
+		background: url("../img/banner-1.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#banner .banner2 {
+		background: url("../img/banner-2.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#banner .banner3 {
+		background: url("../img/banner-3.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#banner .banner4 {
+		background: url("../img/banner-4.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+#banner .banner-content a {
+	color: black;
+	border: 1px solid black;
+    border-radius: 50px;
+    padding: 5px 20px;
+	font-size: 15px;
+	font-family: segoe print;
+}
+	#banner .banner-content a:hover {
+		background: tomato;
+		color: white;
+		border: none;
+	}
+					/*** end banner ***/
+					/*** products ***/
+#products .flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+}
+#products .flex-item {
+  padding: 10px;
+  flex: 25%;
+}
+#products .card {
+	max-width: 100%;
+	height: auto;
+	background: orange;
+	color: white;
+	padding: 0px 0px 20px 0px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 0px 1px orange;
+}
+#products .card del {
+	color: #322e0c;
+	font-size: 80%;
+}
+#products .card .discount {
+	background: tomato;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+	padding: 10px;
+	position: absolute;
+	margin: 10px;
+}
+	#products .card:hover {
+		box-shadow: 0px 0px 50px 0px #ddd;
+		margin-top: -5px;
+	}
+	#products .card:hover > .discount {
+		background: orange;
+		transition: all .5s;
+		border-radius: 15%;
+	}
+#products .card span {
+	background: white;
+	color: tomato;
+	padding: 5px 15px;
+	box-shadow: 1px 1px gray;
+	border-radius: 50px;
+	cursor: pointer;
+}
+	#products .card span:hover {
+		color: white;
+		background: none;
+	}
+#products .card img {
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+}
+#products a {
+	border: 2px solid orange;
+	color: orange;
+	padding: 5px 20px;
+	border-radius: 20px;
+}
+	#products a:hover {
+		border: none;
+		background: orange;
+		color: white;
+	}
+					/*** end products ***/
+					/*** news ***/
+#news .flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+}
+#news .flex-item {
+  padding: 10px;
+  flex: 33.33%;
+  box-shadow: 3px 3px 5px #ddd;
+  border-radius: 20px;
+}
+#news .flex-item span {
+	box-shadow: 1px 1px 5px orange;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+#news .flex-item h2 {
+	color: tomato;
+}
+#news .flex-item a {
+	background: orange;
+	color: black;
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+	#news .flex-item a:hover {
+		background: tomato;
+		color: white;
+		border-radius: 10px;
+	}
+	#news .flex-item:hover {
+		border-radius: 0px;
+		margin-top: -5px;
+	}
+					/*** end news ***/
+					/*** delivery ***/
+#delivery {
+	padding: 10px 0px;
+	text-align: center;
+	background: white;
+}
+#delivery .flex-container {
+	background: url("../img/deliverybg.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	max-width: 100%;
+	height: auto;
+	padding: 100px 0px;
+	display: grid;
+	place-items: center;
+}
+#delivery .flex-container h1 {
+	font-size: 400%;
+	color: white;
+	-webkit-text-stroke: 2px orange;
+	font-family: Montserrat,sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	transform: rotate(-5deg);
+	margin-top: 50px;
+}
+#delivery .flex-container p {
+	color: #333;
+	background: tomato;
+	transform: rotate(-4deg);
+	padding: 5px 60px;
+	margin-bottom: 50px;
+	clip-path: polygon(11% 0,100% 0,89% 100%,0 100%);
+}
+#delivery .flex-container a {
+    border-radius: 50px;
+    padding: 5px 30px;
+	background: orange;
+	color: white;
+}
+	#delivery .flex-container a:hover {
+		color: orange;
+		background: white;
+		border: 1px solid orange;
+	}
+					/*** end delivery ***/
+					/*** subscribe ***/
+#subscribe {
+	width: 100%;
+	background: #fff7df;
+	padding: 20px 0px;
+}
+#subscribe .flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+}
+#subscribe .flex-item {
+  padding: 10px;
+  flex: 33.33%;
+}
+#subscribe h3 {
+	color: tomato;
+}
+#subscribe .social a {
+	font-size: 30px;
+	padding: 10px;
+	color: green;
+}
+	#subscribe .social a:hover {
+		transform: scale(1.5);
+		color: orange;
+	}
+#subscribe .input-container {
+	display: flex;
+	justify-content: center;
+}
+#subscribe .input-container i {
+	padding: 10px;
+	background: darkorange;
+	color: white;
+	min-width: 50px;
+	text-align: center;
+	border-radius: 0px 5px 5px 0px;
+}
+#subscribe .input-container .tooltip {
+	background: #ff6347ed;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -55px;
+    display: none;
+	font-size: 15px;
+	letter-spacing: 2px;
+	
+}
+	#subscribe .input-container i:hover .tooltip {display: block;}
+#subscribe .input-field {
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	text-align: center;
+	background: darkorange;
+	color: white;
+	font-family: inherit;
+	font-weight: bold;
+	text-transform: lowercase;
+	border-radius: 5px 0px 0px 5px;
+	letter-spacing: 2px;
+}
+	#subscribe .input-field:focus {
+		background: orange;
+	}
+					/*** end subscribe ***/
+					/*** footer ***/
+#footer .flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: left;
+}
+#footer .flex-item {
+  padding: 10px;
+  flex: 25%;
+}
+#footer .flex-item i {
+	color: tomato;
+}
+#footer .flex-item p {
+	color: orange;
+}
+.copyright {
+	color: tomato;
+	background: white;
+	padding: 10px 20px;
+	max-width:  300px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 40px 40px 0 0;
+}
+					/*** end footer ***/

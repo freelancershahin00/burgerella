@@ -1,0 +1,130 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+				/*** responsibility for tablet ***/
+
+@media screen and (max-width: 900px){
+	
+.container {
+	width: 90%;
+}
+.topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+}
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+.topnav.responsive .dropdown {float: none;}
+.topnav.responsive .dropdown-content {position: relative;}
+.topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+#hero .flex-container h1 {
+	font-size: 30px;
+}
+#hero .flex-container p {
+	font-size: 15px;
+}
+#banner .flex-container {
+    flex-direction: column;
+}
+#products .flex-item {
+	flex: 50%;
+}
+#delivery .flex-container h1 {
+	font-size: 50px;
+}
+#delivery .flex-container p {
+	font-size: 15px;
+}
+
+}
+
+				/*** end responsibility for tablet ***/
+			
+				/*** responsibility for mobile ***/
+				
+@media screen and (max-width: 600px){
+	
+.container {
+	width: 100%;
+}
+#hero .flex-container {
+	background-size: cover;
+}
+#hero .flex-container h1 {
+	font-size: 20px;
+}
+#hero .flex-container p {
+	font-size: 15px;
+}
+#foodmenu .flex-container {
+    flex-direction: column;
+}
+#footer .flex-container {
+    flex-direction: column;
+}
+#banner .banner1 {
+	background-size: 100% 100%;
+}
+#banner .banner2 {
+	background-size: 100% 100%;
+}
+#banner .banner3 {
+	background-size: 100% 100%;
+}
+#banner .banner4 {
+	background-size: 100% 100%;
+}
+#products .flex-container {
+    flex-direction: column;
+}
+#products .flex-item {
+	max-width: 80%;
+	text-align: center;
+	margin: auto;
+}
+#subscribe .flex-container {
+    flex-direction: column;
+}
+#news .flex-container {
+    flex-direction: column;
+}
+#delivery .flex-container {
+	background-size: cover;
+}
+#delivery .flex-container h1 {
+	font-size: 30px;
+}
+#delivery .flex-container p {
+	font-size: 15px;
+}
+
+}
+
+				/*** end responsibility for mobile	***/
+				
